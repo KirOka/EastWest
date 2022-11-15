@@ -1,9 +1,9 @@
-﻿namespace BusinessLogic.Contracts
+﻿namespace EastWest.Models
 {
     /// <summary>
-    /// ДТО заказа
+    /// Модель заказа для просмотра
     /// </summary>
-    public class OrderDTO
+    public class OrderViewModel
     {
         /// <summary>
         /// Идентификатор
@@ -18,6 +18,6 @@
         /// <summary>
         /// Позиции
         /// </summary>
-        public List<PositionDTO> Positions { get; set; } = new List<PositionDTO>();
+        public List<PositionViewModel> Positions { get; set; } = new List<PositionViewModel>();
     }
 }

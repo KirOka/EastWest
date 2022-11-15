@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EastWest.Mapping;
 using System.Data;
 
 namespace EastWest
@@ -14,6 +15,9 @@ namespace EastWest
 
                 cfg.AddProfile<EastWest.Mapping.OrderMappingsProfile>();
                 cfg.AddProfile<EastWest.Mapping.PositionMappingsProfile>();
+
+                cfg.AddProfile<EastWest.Mapping.OrderViewMappingsProfile>();
+                cfg.AddProfile<EastWest.Mapping.PositionViewMappingsProfile>();
             });
             try
             {

@@ -51,7 +51,7 @@ namespace EastWest.Controllers
         [HttpGet("list")]
         public async Task<IActionResult> GetList()
         {
-            return Ok(_mapper.Map<List<OrderModel>>(await _service.GetAll()));
+            return Ok(_mapper.Map<List<OrderViewModel>>(await _service.GetAll()));
         }
     }
 }

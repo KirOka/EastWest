@@ -8,7 +8,7 @@
         public string? Name { get; set; }
 
         /// <summary>
-        /// Уроки
+        /// Позиции
         /// </summary>
         public List<PositionModel> Positions { get; set; } = new List<PositionModel>();
     }
